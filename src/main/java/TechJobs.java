@@ -125,6 +125,7 @@ public class TechJobs {
 
         if (someJobs.size() == 0) {
             System.out.println(message);
+            return;
         }
 
         for (int i = 0; i < someJobs.size(); i++) {
