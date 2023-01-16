@@ -121,17 +121,16 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         String stars = "*****";
-        String message = "no results";
-        message.toUpperCase();
+        String message = "No Results";
 
         if (someJobs.size() == 0) {
-            System.out.println("\n" + message);
+            System.out.println(message);
         }
 
         for (int i = 0; i < someJobs.size(); i++) {
            System.out.println("\n" + stars);
            for (Map.Entry<String, String> job : someJobs.get(i).entrySet()) {
-               System.out.println(job.getKey() + " : " + job.getValue());
+               System.out.println(job.getKey() + ": " + job.getValue());
            }
            System.out.println(stars);
 
